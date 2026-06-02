@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+                         this works because a function can access any variables in the scope in which its defined
+                    here inner is defined inside middle which inturn is inside outer so inner can access both middle and 
+                    outer aka parent and grandparent
+        </pre>
+    </div>
+</body>
+<script>
+    const outerFunc = () => {
+        let outerVar = 10;
+        const middleFunc = () => {
+            let middleVar = 20;
+            const innerFunc = () => {
+                let innerVar = 30;
+                console.log("outer var",outerVar)
+                console.log("middle var",middleVar)
+                console.log("inner var",innerVar)
+
+            }
+            innerFunc()
+        } 
+        middleFunc()   
+    }
+    outerFunc()
+</script>
+</html>
+

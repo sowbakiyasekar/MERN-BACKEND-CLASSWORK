@@ -1,0 +1,231 @@
+Task
+JavaScript Introduction
+
+What is JavaScript?
+
+Why was JavaScript created?
+
+Is JavaScript interpreted or compiled?
+
+What are the features of JavaScript?
+
+Why is JavaScript called a single-threaded language?
+
+What is the difference between JavaScript and Java?
+
+What is ECMAScript?
+
+What is the role of a JavaScript engine?
+
+What is V8 Engine?
+
+How does JavaScript execute code?
+
+
+
+
+
+Task 1: Variable Declaration & Reassignment
+
+Create variables using:
+
+var
+let
+const
+Requirements:
+
+Declare one variable with each keyword.
+
+Reassign values where possible.
+
+Print outputs.
+
+Explain which variable can and cannot be reassigned.
+
+Task 2: Scope Challenge
+Create:
+
+One Global Variable
+
+One Function Scoped Variable
+
+One Block Scoped Variable
+
+Try accessing all variables inside and outside their scopes.
+
+Expected:
+
+Understand Global Scope
+
+Function Scope
+
+Block Scope
+
+Task 3: Lexical Scope
+Create 3 nested arrow functions.
+
+Example structure:
+
+grandParent
+    ↓
+parent
+    ↓
+child
+The child function should access variables from both parent and grandParent.
+
+Explain why it works.
+
+Task 4: Scope Chain Search
+Create:
+
+const company = "SLA";
+Inside nested functions:
+
+level1()
+   ↓
+level2()
+      ↓
+level3()
+Access company inside level3.
+
+Explain how JavaScript finds the variable.
+
+Task 5: Hoisting Prediction
+Predict output before running:
+
+console.log(a);
+
+var a = 100;
+Then explain:
+
+Memory Creation Phase
+
+Execution Phase
+
+Task 6: TDZ Investigation
+Predict output:
+
+console.log(username);
+
+let username = "Sudhan";
+Explain:
+
+TDZ Start
+
+TDZ End
+
+Why ReferenceError occurs
+
+Task 7: Execution Context
+Create:
+
+const greet = () => {
+  console.log("Hello");
+};
+
+greet();
+Draw the execution flow:
+
+Global Execution Context
+↓
+Function Execution Context
+↓
+Execution Complete
+Explain each step.
+
+Task 8: Type Conversion Challenge
+Without using Google, predict outputs:
+
+console.log("10" + 5);
+
+console.log("10" - 5);
+
+console.log(true + 1);
+
+console.log(false + 10);
+
+console.log(Number("100"));
+
+console.log(String(500));
+Explain why each output occurs.
+
+Task 9: Primitive vs Non-Primitive
+Create examples for:
+
+String
+Number
+Boolean
+Undefined
+Null
+BigInt
+Symbol
+Object
+Array
+Function
+Then identify:
+
+Primitive
+
+Non-Primitive
+
+Explain where values are stored.
+
+Task 10: Complete Interview Scenario
+Create one program containing:
+
+✅ var
+
+✅ let
+
+✅ const
+
+✅ Function Scope
+
+✅ Block Scope
+
+✅ Lexical Scope
+
+✅ Type Conversion
+
+✅ Function Call
+
+✅ Hoisting Example
+
+✅ TDZ Example
+
+After writing the program, explain:
+
+Memory Creation Phase
+
+Execution Phase
+
+Scope Creation
+
+Variable Lookup Process
+
+Final Output
+
+Bonus Interview Task ⭐
+Predict every output without running:
+
+var a = 10;
+
+const outer = () => {
+
+  let b = 20;
+
+  const inner = () => {
+
+    console.log(a);
+
+    console.log(b);
+
+    console.log("5" + 2);
+
+  };
+
+  inner();
+
+};
+
+outer();

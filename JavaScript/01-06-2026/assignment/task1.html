@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>output
+ initial values
+task1.html:55 a is 10, x is 20 and pi is 3.14
+task1.html:57 after reassigning
+task1.html:59 a is not 10
+task1.html:61 x is not 20
+task1.html:62 Uncaught TypeError: Assignment to constant variable.
+
+const cannot be reassigned whereas let and var can be reassigned</pre>
+    </div>
+    
+</body>
+<script>
+    var a = 10;
+    let x = 20;
+    const pi = 3.14;
+
+    console.log(`initial values`)
+    console.log(`a is ${a}, x is ${x} and pi is ${pi}`)
+
+    console.log(`after reassigning`)
+    a = "not 10";
+    console.log(`a is ${a}`)
+    x = "not 20";
+    console.log(`x is ${x}`)
+    pi = "not 3.14";
+    console.log(` pi is ${pi}`)
+</script>
+</html>
+
+
+

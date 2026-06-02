@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p> its the lexical scope, first it sees at level 3 then goes to lebel 2 where its defined and then to level1 where 2 is defined
+  and to gloabal where 1 is defined.</p>
+    </div>
+</body>
+<script>
+    const company= "SLA"
+    const level1 = () => {
+        const level2 = () => {
+            const level3 = () => {
+                console.log("company",company)
+            }
+            level3()
+        } 
+        level2()   
+    }
+    level1()
+</script>
+</html>
+
+

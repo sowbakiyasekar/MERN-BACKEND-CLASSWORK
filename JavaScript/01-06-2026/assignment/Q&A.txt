@@ -1,0 +1,36 @@
+What is JavaScript?
+    JS is a high level interpreted dynamically typed single thread programming language.
+
+Why was JavaScript created?
+    At first there were only static html webpages where any update it has to be done by the developer, in order to
+enable user to update the page that is make it interactive js was created. with js once the page loads and a user gives some data
+and the change is applied on the page which was not possible b4 js. it made webpages dynamic
+
+Is JavaScript interpreted or compiled?
+    JS is interpreted Language
+
+What are the features of JavaScript?
+    js is dynamically typed, interpreted language
+    creates interactive web applications 
+    event driven architecture
+
+Why is JavaScript called a single-threaded language?
+    Its because only one operation gets executed at a time, its done by maintaining a single call stack.
+
+What is the difference between JavaScript and Java?
+    Java is a programming language that is Statically typed and compiled to bytecode, it runs on jvm and its classbased while
+JS is a scripting language that is dynamically typed and it ran in browser and not in a server called nodeJS.
+
+What is ECMAScript?
+    it is called ES the standard spectifications that tell how js syntac should be and how it works. js now follows ES6 
+which has let and const .
+
+What is the role of a JavaScript engine?
+    It reads the js code , parses in and compiles and then executes it.
+
+What is V8 Engine?
+    v8 is google javascript engine.
+
+How does JavaScript execute code?
+    It executes in two phase, one is memory creation phase and next is execution phase. In first phase memory is first aloccated and then
+then value is assigned in execution phase after which call stack is created which tracks the execution.

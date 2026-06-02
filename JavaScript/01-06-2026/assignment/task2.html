@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+                    global- accessed anywhere
+                    funtion- inside block and inside function
+                    block- only inside block
+        </pre>
+    </div>
+</body>
+<script>
+    let globalVariable = 10;
+    function add() {
+        let sum =0;
+        let arr = [2,4,6,9]
+        for (let i =0; i<arr.length; i++) {
+            sum+=arr[i]
+            console.log(`block level i is ${i}`)
+        }
+        console.log(`assessing global inside function ${globalVariable}`);
+        console.log(`assessing function level inside function ${sum}`)
+        // console.log(`block level outside block ${i}`) i is not defined
+    }
+    console.log(`assessing global globally ${globalVariable}`);
+
+    add();
+    // console.log(`assessing function level outside function ${sum}`)  sum is not defined
+    // console.log(`block level outside function ${i}`) i is not defined
+</script>
+</html>
+

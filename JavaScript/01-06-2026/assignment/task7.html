@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            all code has code stack and context is added to it
+            global execution context is created
+            greet is stored in memory
+            greet is called
+            function execution context is created
+            console.log("hello") is executed
+            function context is removed
+            global context is removed
+            program ends
+        </pre>
+    </div>
+</body>
+<script>
+    const greet = () => {
+    console.log("Hello");
+    };
+
+    greet();
+</script>
+</html>
