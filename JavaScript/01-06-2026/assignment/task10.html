@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            memory creation phase-
+                        company- undefined
+                        student and location hoisted but in tdz
+            tdz- 
+                company is undefined no error
+                stident is in tdz so it throws reference error
+            execution phase-
+                company, student, place is initialized valsue
+            scope-
+                global- company studetn, location, ufcntion outer
+                fucntion- department
+                block-  batch, trainer, inner function
+                        
+        </pre>
+    </div>
+</body>
+<script>
+console.log("var before declaration:", company)
+
+// console.log(student)  - ReferenceError
+
+var company = "SLA"
+let student = "Sowbakiya"
+const place = "chennai"
+function outer() {
+    var department = "MERN"
+    if (true) {
+        let batch = "Batch-3-5pm";
+        const trainer = "BalaMugunthan"
+
+        console.log("Type Conversion:", Number("10") + 5)
+
+        const inner = () => {
+            console.log(company)
+            console.log(student)
+            console.log(place)
+            console.log(department)
+            console.log(batch)
+            console.log(trainer)
+        };
+
+        inner()
+    }
+}
+
+outer()
+</script>
+</html>
