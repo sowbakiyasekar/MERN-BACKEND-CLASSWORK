@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            var a = 10;
+                const outer = () => {
+                    let b = 20;
+                    const inner = () => {
+                        console.log(a);         [o/p - 10]
+                        console.log(b);         [o/p - 20]
+                        console.log("5" + 2);   [o/p - 52]
+                    };
+                    inner();
+                };
+            outer();
+        </pre>
+    </div>
+</body>
+</html>
