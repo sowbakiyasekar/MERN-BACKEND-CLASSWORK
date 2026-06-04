@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Create an arrow function that accepts multiple numbers using Rest Parameters and returns the smallest number.
+        </pre>
+    </div>
+</body>
+<script>
+    const findSmallest = (...nums) => {
+        let smallest = nums[0];
+        for (let i=1;i<nums.length;i++) {
+            if (nums[i]<smallest) {
+                smallest = nums[i]
+            }
+        }
+        return smallest
+    }
+
+    console.log(`smallest number is ${findSmallest(35,27,14,89,14)}`)
+</script>
+</html>

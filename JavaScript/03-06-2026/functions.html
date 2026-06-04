@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //show object
+    const returnObject = (user) => {
+        return user
+    }
+    const userDetails = {
+        username : "sowbakiya",
+        course : "MERN"
+    }
+    console.log(returnObject(userDetails))
+
+    //votin eligibility
+    const toVote = (age) => {
+        return (age>=18 ? "can vote" : "cannot vote")
+    }
+    console.log(toVote(15))
+
+    //print even numbers
+    const printEven = (...nums) => {
+        return nums.filter((i)=>i%2==0)
+    }
+    console.log('Even numbers are- ',printEven(3,5,2,7,3,9,2,4))
+
+
+    const findSum = (...arr) => {arr.reduce((sum,a)=>{
+        return sum+a
+    },0)}
+    console.log(findSum(1,4,2,3))
+</script>
+</html>

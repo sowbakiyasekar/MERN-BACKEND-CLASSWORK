@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Create an arrow function that accepts a username. If no username is provided, return "Guest" using a default parameter.
+        </pre>
+    </div>
+</body>
+<script>
+    const getUser = (user="Guest") => {
+        return user
+    }
+
+    const userName = getUser("admin")
+    console.log("argument is provided - ",userName)
+
+    const guestUser = getUser()
+    console.log("argument is not provided - ",guestUser)
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Create an arrow function that accepts a salary amount and returns:
+
+                HRA = 20%
+
+                DA = 10%
+
+                Total Salary
+        </pre>
+    </div>
+</body>
+<script>
+    const salarySplit = (salary) => {
+        const hra = salary*0.2
+        const da = salary*0.1
+        return [hra, da, salary+hra+da]
+    }
+
+    const [hra,da,total] = salarySplit(32000)
+    console.log("HRA -",hra)
+    console.log("DA -",da)
+    console.log("Total Salary -",total)
+</script>
+</html>

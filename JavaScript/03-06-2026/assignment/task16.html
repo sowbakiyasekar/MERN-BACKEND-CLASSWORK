@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Create an arrow function that accepts multiple product prices using Rest Parameters and returns the total bill amount.
+        </pre>
+    </div>
+</body>
+<script>
+    const totalAmount = (...prices) => prices.reduce((t,p) => t+p, 0)
+    console.log(`total bill amount is ${totalAmount(143,15,129,199)}`)
+</script>
+</html>

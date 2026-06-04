@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Create an arrow function that accepts multiple marks using Rest Parameters and returns the total marks.
+        </pre>
+    </div>
+</body>
+<script>
+    const totMarks = (...marks) => marks.reduce((s,x) => s+x, 0)
+
+    console.log(`sum of marks is ${totMarks(93,28,35,92)}`)
+</script>
+</html>

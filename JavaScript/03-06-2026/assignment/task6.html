@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Create an arrow function that accepts two numbers and returns:
+                Sum
+                Difference
+                Multiplication
+                Division
+        </pre>
+    </div>
+</body>
+<script>
+    const basicArithmetic = (x,y) => {
+        return [x+y,x-y,x*y,x/y]
+    }
+
+    const [x,y] = [20,4]
+    const [sum,diff,product,quotient] = basicArithmetic(20,4)
+    console.log(`sum of ${x} and ${y} is ${sum}`)
+    console.log(`difference of ${x} and ${y} is ${diff}`)
+    console.log(`product of ${x} and ${y} is ${product}`)
+    console.log(`division of ${x} and ${y} is ${quotient}`)
+
+</script>
+</html>

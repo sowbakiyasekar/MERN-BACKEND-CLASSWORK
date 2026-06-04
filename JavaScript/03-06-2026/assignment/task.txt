@@ -1,0 +1,62 @@
+Task 1
+
+Create an arrow function that accepts a student's first name and last name and returns the full name.
+
+Task 2
+Create an arrow function that accepts a product price and quantity and returns the total amount.
+
+Task 3
+Create an arrow function that accepts a person's age and returns whether they are eligible for voting.
+
+Task 4
+Create an arrow function that accepts three numbers and returns the largest number.
+
+Task 5
+Create an arrow function that accepts a username. If no username is provided, return "Guest" using a default parameter.
+
+Task 6
+Create an arrow function that accepts two numbers and returns:
+
+Sum
+
+Difference
+
+Multiplication
+
+Division
+
+Task 7
+Create an arrow function that accepts marks of 5 subjects and returns the total and average.
+
+Task 8
+Create an arrow function that accepts a salary amount and returns:
+
+HRA = 20%
+
+DA = 10%
+
+Total Salary
+
+Task 9
+Create an arrow function that accepts a temperature in Celsius and converts it to Fahrenheit.
+
+Task 10
+Create an arrow function that checks whether a given number is even or odd.
+
+Task 11
+Create an arrow function that accepts a string and returns the length of the string.
+
+Task 12
+Create an arrow function that accepts a name and prints the name multiple times based on a count parameter.
+
+Task 13
+Create an arrow function that accepts multiple marks using Rest Parameters and returns the total marks.
+
+Task 14
+Create an arrow function that accepts multiple numbers using Rest Parameters and returns the largest number.
+
+Task 15
+Create an arrow function that accepts multiple numbers using Rest Parameters and returns the smallest number.
+
+Task 16
+Create an arrow function that accepts multiple product prices using Rest Parameters and returns the total bill amount.

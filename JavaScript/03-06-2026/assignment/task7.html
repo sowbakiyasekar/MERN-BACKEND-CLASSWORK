@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Create an arrow function that accepts marks of 5 subjects and returns the total and average.
+        </pre>
+    </div>
+</body>
+<script>
+    const totalMarks = (math,chem,bio,phy,comp) => {
+        const total = math+chem+bio+phy+comp
+        const avg = total/ 5
+        return [ total, avg ]
+    }
+
+    const [total,average] = totalMarks(67,88,72,82,78)
+    console.log(`total marks and average are ${total} and ${average}`)
+</script>
+</html>
