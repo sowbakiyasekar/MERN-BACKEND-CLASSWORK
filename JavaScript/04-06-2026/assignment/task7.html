@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 7 - Callback Injection - Payment Gateway
+
+                Create a function:
+
+                processPayment(callback)
+                Create separate callbacks for:
+
+                GPay
+
+                PhonePe
+
+                Paytm
+
+                Inject each callback dynamically.
+        </pre>
+    </div>
+</body>
+<script>
+    const processPayment = (callback) => {
+        console.log("Payment process initiated")
+        callback()
+    }
+
+    const GPay = () => {
+        console.log("Make your payment through gpay app")
+    }
+    const PhonePe = () => {
+        console.log("Make your payment through phonepe")
+    }
+    const Paytm = () => {
+        console.log("Payment link sent to paytm")
+    }
+
+    processPayment(GPay)
+    processPayment(Paytm)
+    processPayment(PhonePe)
+</script>
+</html>

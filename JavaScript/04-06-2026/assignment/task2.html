@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 2 - Student Attendance Counter
+
+                Create a closure that maintains attendance count.
+
+                Requirements:
+
+                Every function call increases attendance.
+
+                Display current attendance count.
+
+                Count should not reset.
+        </pre>
+    </div>
+</body>
+<script>
+    const attendanceLog = () => {
+        let presentDays = 0
+        return inner = () => {
+            presentDays++
+            console.log("Number of days present - ",presentDays)
+        }
+    }
+    const present = attendanceLog()
+    present()
+    present()
+    present()
+
+</script>
+</html>

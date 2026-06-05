@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 10 - Closure + Callback + setTimeout (Combined)
+
+                Create an order processing system.
+
+                Requirements:
+
+                Maintain order count using Closure.
+
+                Accept a callback using Callback Injection.
+
+                Use setTimeout to simulate processing delay.
+
+                Display:
+
+                Order Number
+                Processing...
+                Order Completed
+                Different callbacks:
+
+                Mobile Order
+
+                Laptop Order
+
+                TV Order
+        </pre>
+    </div>
+</body>
+<script>
+    const checkoutCounter = () => {
+        let orderCount = 0
+        return inner = (callback) => {
+            orderCount++
+            console.log("Order Number -",orderCount)
+            console.log("Processing...")
+            setTimeout(()=>{
+                callback()
+            },2000)
+        }
+    }
+    const Mobile = () => {
+        console.log("Mobile Order Completed")
+    }
+    const Laptop = () => {
+        console.log("Laptop Order Completed")
+    }
+    const TV = () => {
+        console.log("TV Order Completed")
+    }
+
+    const orders = checkoutCounter()
+    orders(Mobile)
+    setTimeout(() => {
+        orders(Laptop) },3000)
+    setTimeout(() => {
+        orders(TV) },6000)
+</script>
+</html>

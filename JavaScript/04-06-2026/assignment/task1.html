@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 1 - Bank Account Using Closure
+
+                Create a closure-based bank account system.
+
+                Features:
+
+                Initial Balance = 5000
+
+                Deposit Amount
+
+                Withdraw Amount
+
+                Check Balance
+
+                Use closure to keep balance private.
+        </pre>
+    </div>
+</body>
+<script>
+    const accountLog = () => {
+        let accBalance = 5000
+        return {
+            deposit : (amt) => {
+                accBalance += amt;
+                console.log("account balance after deposit - ", accBalance)
+            },
+            withdraw : (amt) => {
+                accBalance -= amt;
+                console.log("account balance after withdraw - ", accBalance)
+            },
+            checkBalance : () => {
+                console.log("account balance  - ", accBalance)
+            }
+        }
+    }
+    const transaction = accountLog()
+    transaction.checkBalance()
+    transaction.deposit(500)
+    transaction.checkBalance()
+    transaction.withdraw(200)
+    transaction.checkBalance()
+</script>
+</html>

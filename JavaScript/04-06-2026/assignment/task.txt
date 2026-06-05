@@ -1,0 +1,142 @@
+Task 1 - Bank Account Using Closure
+
+Create a closure-based bank account system.
+
+Features:
+
+Initial Balance = 5000
+
+Deposit Amount
+
+Withdraw Amount
+
+Check Balance
+
+Use closure to keep balance private.
+
+Task 2 - Student Attendance Counter
+Create a closure that maintains attendance count.
+
+Requirements:
+
+Every function call increases attendance.
+
+Display current attendance count.
+
+Count should not reset.
+
+Task 3 - Website Visitor Counter
+Create a closure-based visitor counter.
+
+Requirements:
+
+Each visit should increase count.
+
+Display total visitors.
+
+Counter value should remain preserved.
+
+Task 4 - Shopping Cart Counter
+Create a closure for cart management.
+
+Requirements:
+
+Add product.
+
+Remove product.
+
+Display total items.
+
+Item count should remain private.
+
+Task 5 - ATM Machine System
+Create a closure-based ATM system.
+
+Requirements:
+
+Withdraw money.
+
+Check balance.
+
+Prevent withdrawing more than available balance.
+
+Balance should remain private.
+
+Task 6 - Login Attempt Tracker
+Create a closure.
+
+Requirements:
+
+Every login attempt increases count.
+
+Display current attempt number.
+
+Count should remain preserved.
+
+Task 7 - Callback Injection - Payment Gateway
+Create a function:
+
+processPayment(callback)
+Create separate callbacks for:
+
+GPay
+
+PhonePe
+
+Paytm
+
+Inject each callback dynamically.
+
+Task 8 - Callback Injection - User Actions
+Create a function:
+
+executeAction(callback)
+Create separate callbacks for:
+
+Login
+
+Logout
+
+Register
+
+Execute all actions using callback injection.
+
+Task 9 - setTimeout Notification System
+Create a notification system.
+
+Requirements:
+
+Print:
+
+Sending Notification...
+After 3 seconds print:
+
+Notification Sent
+Use:
+
+setTimeout()
+and arrow functions.
+
+Task 10 - Closure + Callback + setTimeout (Combined)
+Create an order processing system.
+
+Requirements:
+
+Maintain order count using Closure.
+
+Accept a callback using Callback Injection.
+
+Use setTimeout to simulate processing delay.
+
+Display:
+
+Order Number
+Processing...
+Order Completed
+Different callbacks:
+
+Mobile Order
+
+Laptop Order
+
+TV Order

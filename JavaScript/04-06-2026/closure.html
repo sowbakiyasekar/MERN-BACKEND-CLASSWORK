@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const accountBalance = () => {
+        let balance = 25000;
+        // if (action=="withdraw") {
+        //     return withdraw = () => {
+        //         balance -= amount
+        //         console.log(`current balance - ${balance}`)
+        //     }
+        // } else {
+        //     return deposit = () => {
+        //         balance += amount
+        //         console.log(`current balance - ${balance}`)
+        //     }
+        // }
+        return {
+            withdraw : (amount) => {
+                if (balance<amount) {
+                    console.log("withdraw amount more than limit")
+                } else {
+                    balance -= amount
+                }
+            },
+            credit : (amount) => {
+                balance += amount
+            },
+            balance : () => {
+                console.log(`current balance - ${balance}`)
+            }
+        }
+    }
+
+    const transact = accountBalance()
+    transact.withdraw(2000)
+    transact.balance()
+    transact.credit(4000)
+    transact.balance()
+    transact.withdraw(40000)
+</script>
+</html>

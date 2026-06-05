@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 5 - ATM Machine System
+
+                Create a closure-based ATM system.
+
+                Requirements:
+
+                Withdraw money.
+
+                Check balance.
+
+                Prevent withdrawing more than available balance.
+
+                Balance should remain private.
+        </pre>
+    </div>
+</body>
+<script>
+    const accountLog = () => {
+        let accBalance = 5000
+        return {
+            deposit : (amt) => {
+                accBalance += amt;
+                console.log("account balance after deposit - ", accBalance)
+            },
+            withdraw : (amt) => {
+                if ( amt <= accBalance) {
+                    accBalance -= amt;
+                    console.log("account balance after withdraw - ", accBalance)
+                } else {
+                    console.log("CANNOT WITHDRAW!! Limted funds in account!!")
+                }
+            },
+            checkBalance : () => {
+                console.log("account balance  - ", accBalance)
+            }
+        }
+    }
+    const transaction = accountLog()
+    transaction.checkBalance()
+    transaction.deposit(500)
+    transaction.checkBalance()
+    transaction.withdraw(200)
+    transaction.withdraw(6000)
+    transaction.checkBalance()
+</script>
+</html>

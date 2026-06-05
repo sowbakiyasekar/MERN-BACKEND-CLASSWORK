@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 8 - Callback Injection - User Actions
+
+                Create a function:
+
+                executeAction(callback)
+                Create separate callbacks for:
+
+                Login
+
+                Logout
+
+                Register
+
+                Execute all actions using callback injection.
+        </pre>
+    </div>
+</body>
+<script>
+    const executeAction = (callback) => {
+        console.log("Proceed to",callback.name)
+        callback()
+    }
+
+    const Login = () => {
+        console.log("Login Successful")
+    }
+    const Logout = () => {
+        console.log("Logout successful")
+    }
+    const Register = () => {
+        console.log("Registration Success")
+    }
+
+    executeAction(Register)
+    executeAction(Login)
+    executeAction(Logout)
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 6 - Login Attempt Tracker
+
+                Create a closure.
+
+                Requirements:
+
+                Every login attempt increases count.
+
+                Display current attempt number.
+
+                Count should remain preserved.
+        </pre>
+    </div>
+</body>
+<script>
+    const loginRate = () => {
+        let count = 0
+        return inner = () => {
+            count++
+            console.log("attempt count - ",count)
+        }
+    }
+
+    const trackLogin = loginRate()
+    trackLogin()
+    trackLogin()
+    trackLogin()
+    trackLogin()
+
+</script>
+</html>

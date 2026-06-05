@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 4 - Shopping Cart Counter
+
+                Create a closure for cart management.
+
+                Requirements:
+
+                Add product.
+
+                Remove product.
+
+                Display total items.
+
+                Item count should remain private.
+        </pre>
+    </div>
+</body>
+<script>
+    const itemsCart = () => {
+        let items = []
+        let cartCount = 0
+        return {
+            addItem : (item) => {
+                items.push(item)
+                cartCount++
+                console.log(`${cartCount} items in cart after addition - ${items}`)
+            },
+            removeItem : (item) => {
+                items = items.filter( x => x !== item)
+                cartCount--
+                console.log(`${cartCount} items in cart after removal - ${items}`)
+            },
+            displayCart : () => {
+                console.log(`${cartCount} items in cart are - ${items}`)
+            }
+        }
+    }
+
+    const myCart = itemsCart()
+    myCart.addItem("eggs")
+    myCart.addItem("milk")
+    myCart.addItem("plates")
+
+    myCart.removeItem("eggs")
+    myCart.displayCart()
+</script>
+</html>

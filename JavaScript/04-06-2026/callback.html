@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const mainTransaction = (callback) => {
+        console.log("Main function has started")
+        callback()
+    }
+
+    const savings = () => {
+        console.log("process A is chosen")
+    }
+    const methodB = () => {
+        console.log("process B is chosen")
+    }
+    const methodC = () => {
+        console.log("process C is chosen")
+    }
+
+    mainTransaction(methodA)
+    mainTransaction(methodC)
+    mainTransaction(methodB)
+</script>
+</html>

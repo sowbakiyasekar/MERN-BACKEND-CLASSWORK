@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Task 9 - setTimeout Notification System
+
+                Create a notification system.
+
+                Requirements:
+
+                Print:
+
+                Sending Notification...
+                After 3 seconds print:
+
+                Notification Sent
+                Use:
+
+                setTimeout()
+
+                and arrow functions.
+        </pre>
+    </div>
+</body>
+<script>
+    const notificationAlert = () => {
+        console.log("Sending Notification ...")
+        setTimeout(()=> {
+            console.log("Notification Sent")
+        },3000)
+    }
+    notificationAlert()
+</script>
+</html>
