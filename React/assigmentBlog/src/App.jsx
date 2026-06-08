@@ -1,6 +1,7 @@
 import { BrowserRouter, Route , Routes} from "react-router-dom"
-import Home from "./assets/pages/Home"
-import Push from "./assets/pages/Push"
+import Home from "./pages/Home"
+import "./App.css"
+import MethodPage from "./pages/MethodPage"
 function App() {
 
   return (
@@ -8,7 +9,7 @@ function App() {
    <BrowserRouter>
     <Routes>
       <Route path="/" element= {<Home />}/>
-      <Route path="/push" element= {<Push/>}/>
+      <Route path="method/:id" element= {<MethodPage/>}/>
     </Routes>
    </BrowserRouter>
    </>
