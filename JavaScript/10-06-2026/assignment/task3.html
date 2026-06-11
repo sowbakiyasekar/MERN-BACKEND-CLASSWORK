@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+Convert the callback into a Promise and display the result using .then().
+    </pre>
+</body>
+<script>
+    const login=()=> {
+        return new Promise((resolve) => {
+            setTimeout(() => {resolve("Login Success")}, 2000);
+        })
+    }
+
+    login().then((message) => {
+        console.log(message)
+    });
+</script>
+</html>

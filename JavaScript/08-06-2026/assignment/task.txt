@@ -18,3 +18,51 @@ Task 9
 Create an object using Enhanced Object Literals without manually assigning property names and values.
 Task 10
 Create a user dashboard system that safely accesses nested properties such as profile, address, and city using Optional Chaining and displays a default value using Nullish Coalescing when data is unavailable.
+
+ Task 11
+
+Create a function that accepts multiple student marks using Rest Parameters and returns the highest mark.
+
+Task 12
+
+Create a function that merges multiple arrays of courses into a single array using the Spread Operator.
+
+Task 13
+
+Create a function that clones a product object and updates the stock quantity without modifying the original object.
+
+Task 14
+
+Create a function that receives a user object and displays user information using Object Destructuring and Template Literals.
+
+Task 15
+
+Build a mini Employee Management System using only ES6+ features such as:
+
+Arrow Functions
+
+Template Literals
+
+Destructuring
+
+Spread Operator
+
+Rest Parameters
+
+Default Parameters
+
+Optional Chaining
+
+Nullish Coalescing
+
+Enhanced Object Literals
+
+and implement:
+
+Add Employee
+
+Update Employee
+
+Display Employee
+
+Calculate Salary

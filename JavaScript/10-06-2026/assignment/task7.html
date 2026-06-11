@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+Callback Version
+const payment = (success, failure) => {
+
+  const status = false;
+
+  if(status){
+
+    success("Payment Success");
+
+  }
+
+  else{
+
+    failure("Payment Failed");
+
+  }
+
+};
+Task
+Convert this callback-based success/failure code into a Promise using:
+
+resolve()
+
+reject()
+and handle the result using:
+
+.then()
+
+.catch()
+    </pre>
+</body>
+<script>
+    const payment = () =>{
+        return new Promise((resolve,reject)=> {
+            const status = true
+            if (status) {
+                resolve("successfully paid")
+            } else {
+                reject("payment failed")
+            }
+        })
+    }
+
+    payment().then((msg)=> {
+        console.log(msg)
+    }).catch((err)=> {
+        console.log(err)
+    })
+</script>
+</html>

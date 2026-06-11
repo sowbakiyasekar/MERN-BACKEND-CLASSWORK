@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+const getProducts = (callback) => {
+
+  setTimeout(() => {
+
+    callback([
+
+      "Laptop",
+
+      "Mobile",
+
+      "Keyboard"
+
+    ]);
+
+  }, 2000);
+
+};
+Task
+Convert the callback function into a Promise and display products using .then().
+    </pre>
+</body>
+<script>
+    const getProducts=()=> {
+        return new Promise((resolve) => {
+            setTimeout(() => {resolve(["Laptop","Mobile","Keyboard"])}, 2000)
+        })
+    }
+
+    getProducts().then((products) => {
+        console.log(products)
+    })
+</script>
+</html>

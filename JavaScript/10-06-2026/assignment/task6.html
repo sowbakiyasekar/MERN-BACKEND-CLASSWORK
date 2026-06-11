@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+Callback Hell to Promise Chain
+Existing Callback Hell
+getUser(() => {
+
+  getOrders(() => {
+
+    getPayments(() => {
+
+      console.log("Completed");
+
+    });
+
+  });
+
+});
+Task
+Convert the above callback hell into Promise chaining.
+
+Expected:
+
+getUser()
+
+.then(...)
+
+.then(...)
+
+.then(...)
+    </pre>
+</body>
+<script>
+    const getUser= () => {
+        return new Promise((resolve)=> {
+            setTimeout(()=> {resolve("user loaded")},1000)
+        })
+    }
+    const getOrders= () => {
+        return new Promise((resolve)=> {
+            setTimeout(()=> {resolve("order loaded")},1000)
+        })
+    }
+    const getPayments= () => {
+        return new Promise((resolve)=> {
+            setTimeout(()=> {resolve("payment loaded")},1000)
+        })
+    }
+
+    getUser().then((user)=>{
+        console.log(user)
+        return getOrders()
+    }).then((orders)=> {
+        console.log(orders)
+        return getPayments()
+    }).then((payments)=> {
+        console.log(payments)
+        console.log("completed")
+    })
+</script>
+</html>

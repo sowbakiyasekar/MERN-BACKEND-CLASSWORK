@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+Task 1 - Student Data Loading
+
+Callback Version
+const getStudent = (callback) => {
+
+  setTimeout(() => {
+
+    callback("Sudhan");
+
+  }, 2000);
+
+};
+Task
+Convert the above callback code into a Promise-based function.
+
+Expected:
+
+getStudent()
+
+.then(...)
+    </pre>
+</body>
+<script>
+    const getStudent =()=>{
+        return new Promise((resolve)=>{
+            setTimeout(()=>{resolve("Sowbakiya")},2000)
+        })
+    }
+    getStudent().then((student)=>{
+        console.log(student)
+    })
+</script>
+</html>

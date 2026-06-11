@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+const orderFood = (callback) => {
+
+  setTimeout(() => {
+
+    callback("Pizza Delivered");
+
+  }, 4000);
+
+};
+Task
+Convert the callback function into a Promise and display the result using .then().
+    </pre>
+</body>
+<script>
+    const orderFood=()=> {
+        return new Promise((resolve) => {
+            setTimeout(() => {resolve("Pizza Delivered")}, 4000)
+        })
+    }
+
+    orderFood().then((result) => {
+        console.log(result)
+    })
+</script>
+</html>

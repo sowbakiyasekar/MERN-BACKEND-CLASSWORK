@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+Task 2 - Employee Details
+Callback Version
+const getEmployee = (callback) => {
+
+  setTimeout(() => {
+
+    callback({
+
+      id: 1,
+
+      name: "Sudhan",
+
+      role: "Trainer"
+
+    });
+
+  }, 3000);
+
+};
+Task
+Convert the callback into a Promise.
+
+Expected:
+
+getEmployee()
+
+.then(...)
+    </pre>
+</body>
+<script>
+    const getEmployee= ()=> {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+            resolve({
+                id: 1,
+                name: "Sudhan",
+                role: "Trainer",
+            });
+            }, 3000);
+        });
+    }
+
+    getEmployee().then((employee) => {
+        console.log(employee);
+    });
+</script>
+</html>

@@ -1,0 +1,158 @@
+Task 1 - Student Data Loading
+
+Callback Version
+const getStudent = (callback) => {
+
+  setTimeout(() => {
+
+    callback("Sudhan");
+
+  }, 2000);
+
+};
+Task
+Convert the above callback code into a Promise-based function.
+
+Expected:
+
+getStudent()
+
+.then(...)
+
+Task 2 - Employee Details
+Callback Version
+const getEmployee = (callback) => {
+
+  setTimeout(() => {
+
+    callback({
+
+      id: 1,
+
+      name: "Sudhan",
+
+      role: "Trainer"
+
+    });
+
+  }, 3000);
+
+};
+Task
+Convert the callback into a Promise.
+
+Expected:
+
+getEmployee()
+
+.then(...)
+
+Task 3 - Login System
+Callback Version
+const login = (callback) => {
+
+  setTimeout(() => {
+
+    callback("Login Success");
+
+  }, 2000);
+
+};
+Task
+Convert the callback into a Promise and display the result using .then().
+
+Task 4 - Product Loading
+Callback Version
+const getProducts = (callback) => {
+
+  setTimeout(() => {
+
+    callback([
+
+      "Laptop",
+
+      "Mobile",
+
+      "Keyboard"
+
+    ]);
+
+  }, 2000);
+
+};
+Task
+Convert the callback function into a Promise and display products using .then().
+
+Task 5 - Food Delivery System
+Callback Version
+const orderFood = (callback) => {
+
+  setTimeout(() => {
+
+    callback("Pizza Delivered");
+
+  }, 4000);
+
+};
+Task
+Convert the callback function into a Promise and display the result using .then().
+
+Bonus Interview Task 🔥
+Task 6 - Callback Hell to Promise Chain
+Existing Callback Hell
+getUser(() => {
+
+  getOrders(() => {
+
+    getPayments(() => {
+
+      console.log("Completed");
+
+    });
+
+  });
+
+});
+Task
+Convert the above callback hell into Promise chaining.
+
+Expected:
+
+getUser()
+
+.then(...)
+
+.then(...)
+
+.then(...)
+
+Bonus Task 7 - Success & Failure Handling
+Callback Version
+const payment = (success, failure) => {
+
+  const status = false;
+
+  if(status){
+
+    success("Payment Success");
+
+  }
+
+  else{
+
+    failure("Payment Failed");
+
+  }
+
+};
+Task
+Convert this callback-based success/failure code into a Promise using:
+
+resolve()
+
+reject()
+and handle the result using:
+
+.then()
+
+.catch()
