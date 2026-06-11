@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+Create a copy of an employee object and add new properties such as department,
+ experience, and salary without modifying the original object.
+    </div>
+</body>
+<script>
+    const employee = {
+        id: 1,
+        name: "Sowbakiya",
+        role: "Developer"
+    }
+
+    const updatedEmployee = {
+        ...employee,
+        department: "MERN",
+        experience: 2,
+        salary: 50000
+    }
+    console.log(employee)
+    console.log(updatedEmployee)
+
+</script>
+</html>

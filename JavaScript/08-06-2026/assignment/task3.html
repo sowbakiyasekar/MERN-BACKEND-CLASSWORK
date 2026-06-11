@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Create an Arrow Function that accepts a product price and discount percentage and returns the final discounted price.
+    </div>
+</body>
+<script>
+    const priceTag = (price, discount) => {
+        const discountAmt = price * discount/100
+        return price - discountAmt
+    }
+    const originalPrice = 1000
+    const percentDiscount = 12
+    console.log(`Original price- ${originalPrice}
+discount percentage - ${percentDiscount} %
+final price- ${priceTag(originalPrice,percentDiscount)}`)
+</script>
+</html>

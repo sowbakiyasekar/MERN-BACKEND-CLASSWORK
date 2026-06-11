@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+Create a function that clones a product object and updates the stock quantity without modifying the original object.
+    </pre>
+</body>
+<script>
+
+const product = {
+  id: 1,
+  name: "Laptop",
+  stock: 10
+}
+
+const updatedProduct = {
+  ...product,
+  stock: 25
+}
+
+console.log(product)
+console.log(updatedProduct)
+
+</script>
+</html>

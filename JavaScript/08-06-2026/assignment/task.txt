@@ -1,0 +1,20 @@
+Task 1
+Create a student profile using Template Literals and display the student's name, course, city, and institute in a formatted output.
+Task 2
+Create an Arrow Function that accepts employee details and calculates the yearly salary from the monthly salary.
+Task 3
+Create an Arrow Function that accepts a product price and discount percentage and returns the final discounted price.
+Task 4
+Create a user registration function using Default Parameters. If no role is provided, automatically assign a default role.
+Task 5
+Create a shopping cart function using Rest Parameters that accepts multiple product prices and calculates the total bill amount.
+Task 6
+Given two arrays containing frontend and backend technologies, merge them into a single array using the Spread Operator.
+Task 7
+Create a copy of an employee object and add new properties such as department, experience, and salary without modifying the original object.
+Task 8
+Given a student object containing multiple properties, extract all values into separate variables using Object Destructuring and display them.
+Task 9
+Create an object using Enhanced Object Literals without manually assigning property names and values.
+Task 10
+Create a user dashboard system that safely accesses nested properties such as profile, address, and city using Optional Chaining and displays a default value using Nullish Coalescing when data is unavailable.

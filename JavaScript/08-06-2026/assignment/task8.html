@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+Given a student object containing multiple properties, extract all values 
+into separate variables using Object Destructuring and display them.
+   </div> 
+</body>
+<script>
+    const student = {
+        id: 1,
+        name: "Sowbakiya",
+        age: 29,
+        course: "MERN",
+        city: "Chennai"
+    }
+
+    const { id, name, age, course, city } = student
+    console.log(id)
+    console.log(name)
+    console.log(age)
+    console.log(course)
+    console.log(city)
+</script>
+</html>

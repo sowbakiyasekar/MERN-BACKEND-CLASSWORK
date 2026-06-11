@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Build a mini Employee Management System using only ES6+ features such as:
+
+Arrow Functions
+
+Template Literals
+
+Destructuring
+
+Spread Operator
+
+Rest Parameters
+
+Default Parameters
+
+Optional Chaining
+
+Nullish Coalescing
+
+Enhanced Object Literals
+
+and implement:
+
+Add Employee
+
+Update Employee
+
+Display Employee
+
+Calculate Salary
+    </pre>
+    
+</body>
+<script>
+    const employees = []
+
+const addEmployee = (name,role, salary = 25000) => {
+
+  const employee = {
+    id: employees.length + 1,
+    name,
+    role,
+    salary
+  }
+
+  employees.push(employee)
+
+  return employee
+}
+
+const updateEmployeeData = (id,updates) => {
+
+  const index = employees.findIndex(emp => emp.id === id)
+
+  if (index !== -1) {
+    employees[index] = {
+      ...employees[index],
+      ...updates
+    }
+  }
+}
+
+const displayEmployee = id => {
+
+  const employee = employees.find(emp => emp.id === id)
+
+  const name = employee?.name ??"Unknown"
+
+  const role = employee?.role ??"Not Assigned"
+
+  const salary = employee?.salary ??0
+
+  console.log(`
+Employee Details
+Name: ${name}
+Role: ${role}
+Salary: ${salary}
+`)
+}
+
+const calculateSalary = (baseSalary, ...bonuses) => {
+
+  return (
+    baseSalary + bonuses.reduce((sum, bonus) =>sum + bonus,0)
+  )
+}
+
+addEmployee(
+  "Sowbakiya",
+  "Junior developer",
+  50000
+)
+
+addEmployee(
+  "sekar",
+  "Developer"
+)
+
+updateEmployeeData(
+  2,
+  {
+    role: "Senior Developer",
+    salary: 80000
+  }
+)
+
+displayEmployee(1)
+displayEmployee(2)
+
+console.log(
+  calculateSalary(50000,5000,3000,2000)
+)
+</script>
+</html>

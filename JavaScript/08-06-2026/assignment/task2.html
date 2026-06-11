@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Create an Arrow Function that accepts employee details and calculates the yearly salary from the monthly salary.
+    </div>
+</body>
+<script>
+
+const empDetails = {
+    name:"pranesh",
+    salary:25000
+}
+
+const calcSalary = (emp) =>  {
+    const perAnnum = emp.salary * 12
+    console.log(`Employee Name : ${emp.name} and yearly salary - ${perAnnum}`)
+}
+calcSalary(empDetails);
+</script>
+</html>
