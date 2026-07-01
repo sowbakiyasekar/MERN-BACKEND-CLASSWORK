@@ -3,7 +3,7 @@ const TopicsCard = ({title,description}) => {
   return (
     <>
     <div className="bg-gray-900 rounded-2xl p-5 text-white">
-        <h2>{title}</h2>
+        <h2 className="font-semibold">{title}</h2>
         <p>{description}</p>
     </div>
     </>

@@ -3,14 +3,14 @@ import TopicsCard from "../components/TopicsCard"
 
 const Home = () => {
     const topics = [
-        {id:1,title:"variables",descrption:"LEarn variables in javascript"},
-        {id:2,title:"variables",descrption:"LEarn variables in javascript"},
-        {id:3,title:"variables",descrption:"LEarn variables in javascript"},
-        {id:4,title:"variables",descrption:"LEarn variables in javascript"},
-        {id:5,title:"variables",descrption:"LEarn variables in javascript"},
-        {id:6,title:"variables",descrption:"LEarn variables in javascript"},
-        {id:7,title:"variables",descrption:"LEarn variables in javascript"},
-        {id:8,title:"variables",descrption:"LEarn variables in javascript"},
+        {id:1,title:"variables",descrption:"Learn variables in javascript"},
+        {id:2,title:"Operators",descrption:"Learn Operators in javascript"},
+        {id:3,title:"Functions",descrption:"Learn Functions in javascript"},
+        {id:4,title:"Array",descrption:"Learn Array in javascript"},
+        {id:5,title:"Ojects",descrption:"Learn Ojects in javascript"},
+        {id:6,title:"Dom Application",descrption:"Learn Dom Application in javascript"},
+        {id:7,title:"Callback",descrption:"Learn Callback in javascript"},
+        {id:8,title:"Async function",descrption:"Learn Async function in javascript"},
     ]
   return (
     <>
