@@ -1,0 +1,97 @@
+Task
+Task 1 - System Information
+
+Objective:
+Create a Node.js program that displays complete Operating System information using the os module.
+
+Requirements:
+
+Display Hostname
+
+Display Platform
+
+Display Architecture
+
+Display CPU Information
+
+Display Total RAM
+
+Display Free RAM
+
+Task 2 - Process Information
+Objective:
+Create a Node.js program using the process object to display information about the currently running application.
+
+Requirements:
+
+Display Node.js Version
+
+Display Current Working Directory
+
+Display Platform
+
+Display Command Line Arguments
+
+Display Environment Variables
+
+Task 3 - Create Folder Structure Using Path
+Objective:
+Use the path module to create folder paths dynamically and create the folders using the fs module.
+
+Folder Structure:
+
+Project
+
+│── uploads
+
+      │── images
+
+      │── videos
+
+      │── documents
+Requirements:
+
+Use path.join()
+
+Create all folders
+
+Display the generated folder paths
+
+Task 4 - Relative Path vs Absolute Path
+Objective:
+Create a program to understand the difference between Relative Path and Absolute Path.
+
+Requirements:
+
+Display the relative path of an image
+
+Display the absolute path of the same image
+
+Explain the difference using console output
+
+Example Folder:
+
+Project
+
+│── public
+
+      │── images
+
+            │── logo.png
+Task 5 - Environment Variables
+Objective:
+Create and use a .env file in a Node.js project.
+
+Requirements:
+
+Create .env
+
+Store Application Name
+
+Store Port Number
+
+Store Author Name
+
+Read all values using process.env
+
+Display them in the terminal
