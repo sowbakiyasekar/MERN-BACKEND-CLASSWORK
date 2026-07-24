@@ -1,0 +1,7 @@
+NAMES 
+   ross
+   rachel
+   joey
+   phoebe
+   monica
+   chandler

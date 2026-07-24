@@ -1,0 +1,159 @@
+Task
+Task 1 - Student File Management
+
+Objective
+Create a simple Student Management File using the File System (fs) module.
+
+Requirements
+Create a folder named students
+
+Create a file named students.txt
+
+Add at least 5 student names
+
+Read and display the file contents
+
+Append one new student name
+
+Rename the file to student-list.txt
+
+Delete the file
+
+Task 2 - Project Folder Generator
+Objective
+Create a complete project folder structure using the Path and File System modules.
+
+Folder Structure
+Project
+
+│── public
+
+│     ├── css
+
+│     ├── js
+
+│     ├── images
+
+│
+
+├── uploads
+
+│     ├── documents
+
+│     ├── videos
+
+│
+
+├── config
+
+├── logs
+Requirements
+Generate all paths using path.join()
+
+Create every folder using fs.mkdir()
+
+Display all generated folder paths in the terminal
+
+Task 3 - System Information Dashboard
+Objective
+Build a terminal dashboard using the OS and Process modules.
+
+Display
+Node Version
+
+Current Working Directory
+
+Hostname
+
+Platform
+
+Architecture
+
+CPU Count
+
+Total RAM
+
+Free RAM
+
+Process ID
+
+Display the output in a clean format.
+
+Task 4 - Environment Configuration
+Objective
+Create and use environment variables in a Node.js project.
+
+Requirements
+Create a .env file with:
+
+APP_NAME=Student Management
+
+PORT=5000
+
+AUTHOR=Sudhan
+
+DB_NAME=StudentDB
+Display all values using process.env.
+
+Also display:
+
+Current Node Version
+
+Current Project Folder
+
+Task 5 - Mini File Manager Project
+Objective
+Develop a simple File Manager using fs, path, os, process, and dotenv.
+
+Folder Structure
+Node-Day3
+
+│── .env
+
+│── app.js
+
+│
+
+├── storage
+
+│     ├── reports
+
+│     ├── backup
+
+│
+
+├── uploads
+
+│     ├── images
+
+│     ├── documents
+Requirements
+Create all folders using fs.mkdir()
+
+Generate folder paths using path.join()
+
+Create a file named report.txt
+
+Write data into the file
+
+Read the file contents
+
+Display:
+
+Hostname
+
+Platform
+
+Node Version
+
+Current Working Directory
+
+Environment Variables
+
+Rename report.txt to daily-report.txt
+
+Copy the file into the backup folder
+
+Delete the original file after copying
+
+These five tasks progressively cover the most important concepts of fs, path, os, process, and dotenv, making them excellent practice before moving on to the HTTP module and Express.js.

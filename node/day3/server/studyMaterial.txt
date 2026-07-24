@@ -1,0 +1,228 @@
+1. File System (fs)
+
+What is fs?
+The File System (fs) module is a built-in Node.js Core Module used to work with files and folders.
+
+Using fs, we can:
+
+Create Files
+
+Read Files
+
+Update Files
+
+Delete Files
+
+Rename Files
+
+Copy Files
+
+Create Folders
+
+Delete Folders
+
+Read Folder Contents
+
+Watch File Changes
+
+Import
+import fs from "fs";
+Syntax
+Create File
+fs.writeFile(path, data, callback);
+Read File
+fs.readFile(path, encoding, callback);
+Append File
+fs.appendFile(path, data, callback);
+Rename File
+fs.rename(oldPath, newPath, callback);
+Delete File
+fs.unlink(path, callback);
+Copy File
+fs.copyFile(source, destination, callback);
+Create Folder
+fs.mkdir(path, options, callback);
+Read Folder
+fs.readdir(path, callback);
+Delete Folder
+fs.rm(path, options, callback);
+File Information
+fs.stat(path, callback);
+Watch File
+fs.watch(path, callback);
+2. Path Module
+What is Path?
+The Path module is a built-in Node.js module used to create, manage, and manipulate file and folder paths.
+
+It helps create platform-independent paths for Windows, Linux, and macOS.
+
+Import
+import path from "path";
+Important Methods
+Join Path
+path.join(path1, path2, path3);
+Resolve Path (Absolute Path)
+path.resolve(path);
+File Name
+path.basename(path);
+Folder Name
+path.dirname(path);
+File Extension
+path.extname(path);
+Normalize Path
+path.normalize(path);
+Parse Path
+path.parse(path);
+Format Path
+path.format(object);
+3. OS Module
+What is OS?
+The OS module is a built-in Node.js module used to get information about the Operating System.
+
+Import
+import os from "os";
+Important Methods
+Hostname
+os.hostname();
+Platform
+os.platform();
+Architecture
+os.arch();
+CPU Information
+os.cpus();
+Total Memory
+os.totalmem();
+Free Memory
+os.freemem();
+Home Directory
+os.homedir();
+Temporary Directory
+os.tmpdir();
+Network Interfaces
+os.networkInterfaces();
+Operating System Type
+os.type();
+Operating System Release
+os.release();
+System Uptime
+os.uptime();
+4. Process Object
+What is Process?
+The process object provides information about the currently running Node.js application.
+
+It is available globally, so no import is required.
+
+Syntax
+Current Working Directory
+process.cwd();
+Node Version
+process.version;
+Platform
+process.platform;
+Environment Variables
+process.env;
+Command Line Arguments
+process.argv;
+Process ID
+process.pid;
+Exit Process
+process.exit();
+Current Memory Usage
+process.memoryUsage();
+5. dotenv Package
+What is dotenv?
+dotenv is an external package used to load environment variables from a .env file into process.env.
+
+It is mainly used to store:
+
+Port Number
+
+Database URL
+
+API Keys
+
+JWT Secret
+
+Application Name
+
+Install
+npm install dotenv
+Create
+.env
+Example
+
+PORT=5000
+
+APP_NAME=Node Backend
+
+DB_URL=mongodb://localhost:27017/studentdb
+Import
+import dotenv from "dotenv";
+Load Environment Variables
+dotenv.config();
+Access Variables
+process.env.PORT
+
+process.env.APP_NAME
+
+process.env.DB_URL
+Learning Order
+Node.js
+
+↓
+
+Core Modules
+
+↓
+
+File System (fs)
+
+↓
+
+Path
+
+↓
+
+OS
+
+↓
+
+Process
+
+↓
+
+dotenv
+
+↓
+
+HTTP Module
+
+↓
+
+Express.js
+Interview Summary
+Module
+
+Purpose
+
+fs
+
+File & Folder Handling
+
+path
+
+Create and Manage File Paths
+
+os
+
+Get Operating System Information
+
+process
+
+Access Current Node.js Process Information
+
+dotenv
+
+Load Environment Variables from .env File
+
+These are the core concepts and syntax you should know before moving to HTTP, Express, and MVC architecture in Node.js.
